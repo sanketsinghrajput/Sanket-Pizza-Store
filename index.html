@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sanket Pizza Store 🍕</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+   <!-- header section starts  -->
+
+   <header class="header">
+
+      <section class="flex">
+
+         <a href="#home" class="logo">Sanket Pizza Store</a>
+
+         <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="#faq">FAQ</a>
+         </nav>
+
+         <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="order-btn" class="fas fa-box"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+         </div>
+
+      </section>
+
+   </header>
+
+   <!-- header section ends -->
+
+   <div class="user-account">
+
+      <section>
+
+         <div id="close-account"><span>close</span></div>
+
+         <div class="user">
+            <p><span>You are not logged in now!</span></p>
+         </div>
+
+         <div class="display-orders">
+            <p>pizza-1 <span>( Rs 300/- x 2 )</span></p>
+            <p>pizza 03 <span>( Rs 300/- x 1 )</span></p>
+            <p>pizza 06 <span>( Rs 300/- x 4 )</span></p>
+            <p>pizza 07 <span>( Rs 300/- x 1 )</span></p>
+         </div>
+
+         <div class="flex">
+
+            <form action="" method="post">
+               <h3>login now</h3>
+               <input type="email" name="email" required class="box" placeholder="Enter your email" maxlength="50">
+               <input type="password" name="pass" required class="box" placeholder="Enter your password" maxlength="20">
+               <input type="submit" value="login now" name="Login" class="btn">
+            </form>
+
+            <form action="" method="post">
+               <h3>register now</h3>
+               <input type="text" name="name" required class="box" placeholder="Enter your name" maxlength="20">
+               <input type="email" name="email" required class="box" placeholder="Enter your email" maxlength="50">
+               <input type="password" name="pass" required class="box" placeholder="Enter your password" maxlength="20">
+               <input type="password" name="cpass" required class="box" placeholder="confirm your password"
+                  maxlength="20">
+               E <input type="submit" value="register now" name="register" class="btn">
+               E
+            </form>
+
+            E
+         </div>
+
+      </section>
+
+   </div>
+
+   <div class="my-orders">
+
+      <section>
+
+         <div id="close-orders"><span>close</span></div>
+
+         <h3 class="title"> my orders </h3>
+
+         <div class="box">
+            <p>Placed on : <span>06/04/2022</span> </p>
+            <p>Name : <span>Harshit Aditya</span> </p>
+            <p>Phone Number : <span>6299259233</span></p>
+            <p>Address : <span>Harmu, Ranchi, Jharkhand, India - 834001</span></p>
+            <p>Payment method : <span>Cash On Delivery</span></p>
+            <p>Your orders : <span>Vegie Delight Rs 600/- x 2, Chicken Loaded Pizza Rs 300/- x 1, Paratha Pizza Rs 400/-
+                  x 4,
+                  Pizza Mania, Rs
+                  30/- x 1</span>
+            </p>
+            <p>Total price : <span>Rs 3130/-</span></p>
+            <p>Payment status : <span style="color: var(--red);">Pending</span> </p>
+         </div>
+
+         <div class="box">
+            <p>Placed on : <span>06/04/2022</span> </p>
+            <p>Name : <span>SANKET</span> </p>
+            <p>Phone Number : <span>858000533</span></p>
+            <p>Address : <span>Dhurwa, Ranchi, Jharkhand, India - 834001</span></p>
+            <p>Payment method : <span>cash on delivery</span></p>
+            <p>Your orders : <span>Vegie Delight Rs 600/- x 2, Chicken Loaded Pizza Rs 300/- x 1, Paratha Pizza Rs 400/-
+                  x 4,
+                  Pizza Mania, Rs
+                  30/- x 1</span>
+            </p>
+            <p>Total price : <span>Rs 3130/-</span></p>
+            <p>Payment status : <span style="color: var(--red);">Pending</span> </p>
+         </div>
+
+      </section>
+
+   </div>
+
+   <div class="shopping-cart">
+
+      <section>
+
+         <div id="close-cart"><span>close</span></div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-1.jpg" alt="">
+            <div class="content">
+               <p>Veg Extravaganza <span>( Rs 300/- x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-3.jpg" alt="">
+            <div class="content">
+               <p>Chicken Supreme <span>( Rs 300/- x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-6.jpg" alt="">
+            <div class="content">
+               <p>FarmHouse <span>( Rs 300/- x 2 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <div class="box">
+            <a href="#" class="fas fa-times"></a>
+            <img src="images/pizza-7.jpg" alt="">
+            <div class="content">
+               <p>Cheese Dominator <span>( Rs 300/- x 1 )</span></p>
+               <form action="" method="post">
+                  <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+                  <button type="submit" class="fas fa-edit" name="update_qty"></button>
+               </form>
+            </div>
+         </div>
+
+         <a href="#order" class="btn">Order now</a>
+
+      </section>
+
+   </div>
+
+   <div class="home-bg">
+
+      <section class="home" id="home">
+
+         <div class="slide-container">
+
+            <div class="slide active">
+               <div class="image">
+                  <img src="images/home-img-1.png" alt="">
+               </div>
+               <div class="content">
+                  <h3>Homemade Pepperoni Pizza</h3>
+                  <div class="fas fa-angle-left" onclick="prev()"></div>
+                  <div class="fas fa-angle-right" onclick="next()"></div>
+               </div>
+            </div>
+
+            <div class="slide">
+               <div class="image">
+                  <img src="images/home-img-2.png" alt="">
+               </div>
+               <div class="content">
+                  <h3>Pizza With Mushrooms</h3>
+                  <div class="fas fa-angle-left" onclick="prev()"></div>
+                  <div class="fas fa-angle-right" onclick="next()"></div>
+               </div>
+            </div>
+
+            <div class="slide">
+               <div class="image">
+                  <img src="images/home-img-3.png" alt="">
+               </div>
+               <div class="content">
+                  <h3>Mascarpone And Mushrooms</h3>
+                  <div class="fas fa-angle-left" onclick="prev()"></div>
+                  <div class="fas fa-angle-right" onclick="next()"></div>
+               </div>
+            </div>
+
+         </div>
+
+      </section>
+
+   </div>
+
+   <!-- about section starts  -->
+
+   <section class="about" id="about">
+
+      <h1 class="heading">about us</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <img src="images/about-1.svg" alt="">
+            <h3>Made with love</h3>
+            <p>Our pizzas our one of the best which you can find in Ranchi. Our pizzas our homemade and made with our
+               mother's love.👩‍👦</p>
+            <a href="#menu" class="btn">Our menu</a>
+         </div>
+
+         <div class="box">
+            <img src="images/about-2.svg" alt="">
+            <h3>30 minutes delivery</h3>
+            <p>We are very strict with our rules. We deliver our pizzas with 30 minutes of delivery time.</p>
+            <a href="#menu" class="btn">Our menu</a>
+         </div>
+
+         <div class="box">
+            <img src="images/about-3.svg" alt="">
+            <h3>Share with freinds</h3>
+            <p>If you like our pizzas then do bring your friend and family here 😄. </p>
+            <a href="#menu" class="btn">Our menu</a>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- about section ends -->
+
+   <!-- menu section starts  -->
+
+   <section id="menu" class="menu">
+
+      <h1 class="heading">Our menu</h1>
+
+      <div class="box-container">
+
+         <div class="box">
+            <div class="price">Rs<span>600</span>/-</div>
+            <img src="images/pizza-1.jpg" alt="">
+            <div class="name">Vegie Delight</div>
+            <form action="" method="post">
+               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">Rs<span>300</span>/-</div>
+            <img src="images/pizza-2.jpg" alt="">
+            <div class="name">Farmhouse</div>
+            <form action="" method="post">
+               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">Rs<span>300</span>/-</div>
+            <img src="images/pizza-3.jpg" alt="">
+            <div class="name">Chicken Loaded Pizza</div>
+            <form action="" method="post">
+               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">Rs<span>800</span>/-</div>
+            <img src="images/pizza-4.jpg" alt="">
+            <div class="name">Cheese Dominator</div>
+            <form action="" method="post">
+               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">Rs <span>400 </span>/-</div>
+            <img src="images/pizza-5.jpg" alt="">
+            <div class="name">Panner Pizza</div>
+            <form action="" method="post">
+               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">Rs <span>400</span>/-</div>
+            <img src="images/pizza-6.jpg" alt="">
+            <div class="name">Paratha Pizza</div>
+            <form action="" method="post">
+               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">Rs <span>30</span>/-</div>
+            <img src="images/pizza-7.jpg" alt="">
+            <div class="name">Pizza Mania</div>
+            <form action="" method="post">
+               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">Rs<span>700</span>/-</div>
+            <img src="images/pizza-8.jpg" alt="">
+            <div class="name">Veggie Paradise</div>
+            <form action="" method="post">
+               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+         <div class="box">
+            <div class="price">Rs 500 <span>4</span>/-</div>
+            <img src="images/pizza-9.jpg" alt="">
+            <div class="name">Peppy Panner</div>
+            <form action="" method="post">
+               <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+               <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+            </form>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- menu section ends -->
+
+   <!-- order section starts  -->
+
+   <section class="order" id="order">
+
+      <h1 class="heading">order now</h1>
+
+      <form action="" method="post">
+
+         <div class="display-orders">
+            <p>Vegie Delight <span>( Rs 600/- x 2 )</span></p>
+            <p>Chicken Loaded Pizza<span>( Rs 300/- x 1 )</span></p>
+            <p>Paratha Pizza <span>( Rs 400/- x 4 )</span></p>
+            <p>Pizza Mania <span>( Rs 30/- x 1 )</span></p>
+         </div>
+
+         <div class="flex">
+            <div class="inputBox">
+               <span>Your name :</span>
+               <input type="text" name="name" class="box" required placeholder="Enter your name" maxlength="20">
+            </div>
+            <div class="inputBox">
+               <span>Your number :</span>
+               <input type="number" name="number" class="box" required placeholder="Enter your number" min="0">
+            </div>
+            <div class="inputBox">
+               <span>Payment method</span>
+               <select name="method" class="box">
+                  <option value="cash on delivery">Cash on delivery</option>
+                  <option value="credit card">Credit/Debit card</option>
+                  <option value="paytm">GPay</option>
+                  <option value="paypal">Paytm</option>
+               </select>
+            </div>
+            <div class="inputBox">
+               <span>Address line 01 :</span>
+               <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+            </div>
+            <div class="inputBox">
+               <span>Address line 02 :</span>
+               <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+            </div>
+            <div class="inputBox">
+               <span>Pin code :</span>
+               <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+            </div>
+         </div>
+
+         <input type="submit" value="order now" class="btn" name="order">
+
+      </form>
+
+   </section>
+
+   <!-- order section ends -->
+
+   <!-- faq section starts  -->
+
+   <section class="faq" id="faq">
+
+      <h1 class="heading">FAQ</h1>
+
+      <div class="accordion-container">
+
+         <div class="accordion active">
+            <div class="accordion-heading">
+               <span>How does it work?</span>
+               <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accrodion-content">
+               Thats a Secret :).
+            </p>
+         </div>
+
+         <div class="accordion">
+            <div class="accordion-heading">
+               <span>How long does it take for delivery?</span>
+               <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accrodion-content">
+               It takes 30 min for a delivery.
+            </p>
+         </div>
+
+         <div class="accordion">
+            <div class="accordion-heading">
+               <span>Can I order for huge parties?</span>
+               <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accrodion-content">
+               Yes ! why not apna sapna money money.
+            </p>
+         </div>
+
+         <div class="accordion">
+            <div class="accordion-heading">
+               <span>How much protein it contains?</span>
+               <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accrodion-content">
+               Our Pizzas contain 20% protien.
+            </p>
+         </div>
+
+
+         <div class="accordion">
+            <div class="accordion-heading">
+               <span>Is it cooked with oil?</span>
+               <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accrodion-content">
+               Yes
+            </p>
+         </div>
+
+      </div>
+
+   </section>
+
+   <!-- faq section ends -->
+
+   <!-- footer section starts  -->
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>Phone number</h3>
+            <p>+91 85800 05399</p>
+            <p>+91 97435 43562</p>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Our address</h3>
+            <p>Dhurwa Ranchi</p>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-clock"></i>
+            <h3>Opening hours</h3>
+            <p>09:00 AM to 11:59 pm</p>
+         </div>
+
+         <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email address</h3>
+            <p>sanket_202000513@smit.smu.edu.in</p>
+         </div>
+
+      </div>
+
+      <div class="credit">
+         Made by <a href="https://www.instagram.com/sanketsinghrajput_/?hl=en"><span>Sanket</span></a>
+      </div>
+   </section>
+
+   <!-- custom js file link  -->
+   <script src="js/script.js"></script>
+
+</body>
+
+</html>
